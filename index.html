@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Olson Home</title>
     <style>
         html * {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
+            background-image: url('/web_content/imgs/canada1.jpeg');
+            /* opacity: 0.6; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px 180px;
+            /* margin-bottom: 20px; */
             /* background-image:
         url('https://unsplash.com/photos/a-large-group-of-ice-chunks-in-front-of-a-mountain-HhOzGoceGP4') repeat 0 0; */
             /* background-image: url('https://www.its.caltech.edu/~atomic/snowcrystals/photos3/w050207a045.jpg'); */
-            background-image: url("web_content/img/rajan-dahal-HhOzGoceGP4-unsplash.jpg");
+            /* background-image: url("web_content/img/rajan-dahal-HhOzGoceGP4-unsplash.jpg"); */
 
             /* opacity: 0.75; */
-        }
-
-        .section2 {
-            color: #005b96;
-
         }
 
         .topnav {
             background-color: #005b96;
             border-radius: 5px;
-            padding: 20px;
-            color: red;
+            /* padding: 20px; */
             /* background-image:
         url('https://unsplash.com/photos/a-snow-covered-mountain-with-a-clear-blue-sky-T0nsKNU3e4k'); */
         }
@@ -68,44 +68,81 @@
         img {
             height: 100vh;
         }
+
+        br {
+            line-height: 200%;
+        }
+
+        .section2 {
+            color: whitesmoke;
+            font-size: 15px;
+            background-color: #304529;
+            opacity: 0.8;
+            margin: 0%;
+            padding: 5px;
+            margin-left: 80%;
+            /* text-align: right; */
+        }
+
+        .section2 a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .section2 a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .section2 a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .section2 a:active {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <header>
     <div class="topnav">
-        <a class="active" href="index_raw.html">Home</a>
-        <a href="/bio/bio.html">Bio</a>
-        <a href="/courses/course_info.html">Courses</a>
-        <a href="">Lab</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="/pages/bio.html">Bio</a>
+        <a href="/pages/course_info.html">Courses</a>
+        <a href="/pages/lab.html">Lab</a>
         <a href="https://mattols.github.io/snow_watch/">Snowpack</a>
-        <a href="">GIS Certificate</a>
-        <a href="">Misc</a>
+        <a href="/pages/geog.html">GEOG</a>
+        <a href="pages/gis.html">GIS Certificate</a>
+        <a href="/pages/misc.html">Misc</a>
     </div>
     <h3 class="title">Welcome!</h3>
 </header>
 
 <body>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat accusantium quasi, aut quam nobis blanditiis
-        dolorem quo dignissimos inventore saepe, magnam vero. Sed voluptatum laborum quod reiciendis ex! Ipsam impedit
-        iure nulla nobis labore incidunt laudantium earum, cum inventore consequuntur laborum deleniti dolorum
-        consequatur eveniet vero mollitia repellat quos ex. Obcaecati eaque quis excepturi eos porro consectetur
-        provident! Ut, dolor nulla porro eum quidem ratione illum odio pariatur labore provident, quasi officiis
-        deserunt ipsam at commodi deleniti, earum rem? Perferendis optio facere earum blanditiis unde atque,
-        exercitationem veniam perspiciatis dolore culpa tempora praesentium minus fugiat eveniet enim voluptate ex
-        nostrum.
+    <p>You have landed on Dr. Olson's website. Explore the tabs to learn more about me, courses that I teach, my
+        research lab, or information about the geography program and GIS certificate at UVU.
     </p>
-    <p>To do:</p>
-    <p>resize the top navigation bar, add other pages, decide where ocntent goes, add data links!</p>
-
-    <img src="/web_content/imgs/canada1.jpeg" alt="Bugaboo Glacier">
-    <p>Bugaboo Provincial Park, CA</p>
     <br>
+    <p style="color: whitesmoke;opacity: 0.5;font-size: 14px;">Bugaboo Glacier | Bugaboo Provincial Park, CA</p>
+    <p style="font-weight: lighter; font-style: italic; color: whitesmoke;">"We forget that the water cycle and the life
+        cycle are one" - Jacques Cousteau</p>
+    <!-- <img src="/web_content/imgs/canada1.jpeg" alt="Bugaboo Glacier"> -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="section2">
-        <h1>Quick Links</h1>
-        <ul>
-            <li>UVU Earth Science</li>
-            <li>Second</li>
-            <li>Third</li>
+        <h3>UVU Links</h3>
+        <ul style="list-style-type:circle;">
+            <li><a class="a" href="https://www.uvu.edu/earthscience/">Earth Science</a></li>
+            <li><a class="a" href="https://www.uvu.edu/directory/employee/?id=aWRudXZiTlQ1U1pXTU1qV1l1ai94Zz09">Olson
+                    Faculty
+                    Page</a></li>
+            <li><a class="a" href="https://www.uvu.edu/earthscience/programs/index.html">Earth Science Degrees</a></li>
         </ul>
     </div>
 </body>
