@@ -1,150 +1,1310 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olson Home</title>
-    <style>
-        html * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-        body {
-            background-image: url('/web_content/imgs/canada1.jpeg');
-            /* opacity: 0.6; */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 0px 180px;
-            /* margin-bottom: 20px; */
-            /* background-image:
-        url('https://unsplash.com/photos/a-large-group-of-ice-chunks-in-front-of-a-mountain-HhOzGoceGP4') repeat 0 0; */
-            /* background-image: url('https://www.its.caltech.edu/~atomic/snowcrystals/photos3/w050207a045.jpg'); */
-            /* background-image: url("web_content/img/rajan-dahal-HhOzGoceGP4-unsplash.jpg"); */
+    <!-- Favicons -->
+    <link href="assets/img/favicon-32x32.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon-snow.png" rel="apple-touch-icon" />
 
-            /* opacity: 0.75; */
-        }
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-        .topnav {
-            background-color: #005b96;
-            border-radius: 5px;
-            /* padding: 20px; */
-            /* background-image:
-        url('https://unsplash.com/photos/a-snow-covered-mountain-with-a-clear-blue-sky-T0nsKNU3e4k'); */
-        }
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-        /* Add a black background color to the top navigation */
-        .topnav {
-            background-color: #333;
-            overflow: hidden;
-        }
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+    <!--Pageclip form-->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+    <!-- =======================================================
+  * Template Name: Multi
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
 
-        /* Add a color to the active/current link */
-        .topnav a.active {
-            background-color: #005b96;
-            color: white;
-        }
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><a href="index.html">CryoSpatial Lab @ UVU</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        .title {
-            color: #005b96
-        }
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#about">About</a></li>-->
+            <li class="dropdown">
+              <a href="#about"
+                ><span>About</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Dr. Olson</a></li>
+                <li><a href="#">Research Group</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#services"
+                ><span>Research</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Research Interests</a></li>
+                <li><a href="#">Ongoing Work</a></li>
+                <li><a href="#">Publications</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Teaching</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">GEOG 1000 - Physical Geography</a></li>
+                <li>
+                  <a href="#">GEOG 2000 - Sustainability and the Environment</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >GEOG 3600 - Intro to Geographic Information Systems</a
+                  >
+                </li>
+                <li>
+                  <a href="#">GEOG 3400 - Environmental Remote Sensing</a>
+                </li>
+                <li><a href="#">GEOG 3440 - Geospatial Data Science</a></li>
+                <li><a href="#">GEO 202R - Science Excursion</a></li>
+              </ul>
+            </li>
+            <!--<li><a class="nav-link scrollto" href="#portfolio">Research</a></li>-->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Resources</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <!--<li><a href="#">Cryosphere</a></li>-->
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Water</span> <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Cryosphere</a></li>
+                    <li><a href="#">Hydrology</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Geospatial</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">Miscellaneous</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>GEOG & GIS</span> <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Geography Pathways</a></li>
+                    <li><a href="#">GIS Certificate</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
 
-        img {
-            height: 100vh;
-        }
+            <li class="dropdown">
+              <a href="#portfolio"
+                ><span>Communications</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Student Blog</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Photos</a></li>
+              </ul>
+            </li>
+            <!--<li><a class="nav-link scrollto" href="#">Events</a></li>-->
+            <!--<li><a class="nav-link scrollto" href="#portfolio">Photos</a></li>-->
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-        br {
-            line-height: 200%;
-        }
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div
+        id="heroCarousel"
+        data-bs-interval="5000"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        .section2 {
-            color: whitesmoke;
-            font-size: 15px;
-            background-color: #304529;
-            opacity: 0.8;
-            margin: 0%;
-            padding: 5px;
-            margin-left: 80%;
-            /* text-align: right; */
-        }
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/img/slide/canada1.jpeg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Welcome to
+                  <span>the CryoSpatial Lab</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  We focus on a research related to the cryosphere, mountain
+                  hydrology, and other geospatial and remote sensing analysis.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
 
-        .section2 a:link {
-            color: green;
-            background-color: transparent;
-            text-decoration: none;
-        }
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/canada3.jpeg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  The Role of Glaciers and Snowpack in Hydrology
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  We can better understand water resources in snow- and
+                  glacier-dominated watersheds through a variety or remote, lab,
+                  and field techniques.
+                </p>
+                <a
+                  href="#why-us"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
 
-        .section2 a:visited {
-            color: white;
-            background-color: transparent;
-            text-decoration: none;
-        }
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/IMG_7698.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Earth Science
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Studying Earth science is vital for understanding climate
+                  change, environmental health, natural disaster mitigation, and
+                  water resource management. It informs decisions on sustainable
+                  practices, crucial for advancing our understanding of the
+                  universe while safeguarding the health of our planet.
+                </p>
+                <a
+                  href="#faq"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Consider Earth Science</a
+                >
+              </div>
+            </div>
+          </div>
 
-        .section2 a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: underline;
-        }
+          <!-- Slide 4 -->
+          <div
+            class="carousel-item"
+            style="
+              background-image: url(assets/img/slide/timp-pit.jpeg);
+              background-position: center bottom;
+            "
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">News</h2>
+                <p class="animate__animated animate__fadeInUp">
+                  See what we've been up to!
+                </p>
+                <a
+                  href="#news"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-        .section2 a:active {
-            color: white;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<header>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="/pages/bio.html">Bio</a>
-        <a href="/pages/course_info.html">Courses</a>
-        <a href="/pages/lab.html">Lab</a>
-        <a href="/pages/geog.html">GEOG</a>
-        <a href="pages/gis.html">GIS Certificate</a>
-        <a href="https://mattols.github.io/snow_watch/">Snowpack</a>
-        <a href="/pages/misc.html">Misc</a>
-    </div>
-    <h3 class="title">Welcome!</h3>
-</header>
+        <a
+          class="carousel-control-prev"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bi bi-chevron-left"
+            aria-hidden="true"
+          ></span>
+        </a>
 
-<body>
+        <a
+          class="carousel-control-next"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bi bi-chevron-right"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+    </section>
+    <!-- End Hero -->
 
-    <p>You have landed on Dr. Olson's website. Explore the tabs to learn more about me, courses that I teach, my
-        research lab, or information about the geography program and GIS certificate at UVU.
-    </p>
-    <br>
-    <p style="color: whitesmoke;opacity: 0.5;font-size: 14px;">Bugaboo Glacier | Bugaboo Provincial Park, CA</p>
-    <p style="font-weight: lighter; font-style: italic; color: whitesmoke;">"We forget that the water cycle and the life
-        cycle are one" - Jacques Cousteau</p>
-    <!-- <img src="/web_content/imgs/canada1.jpeg" alt="Bugaboo Glacier"> -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
+            <p>About The Lab</p>
+          </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="section2">
-        <h3>UVU Links</h3>
-        <ul style="list-style-type:circle;">
-            <li><a class="a" href="https://www.uvu.edu/earthscience/">Earth Science</a></li>
-            <li><a class="a" href="https://www.uvu.edu/directory/employee/?id=aWRudXZiTlQ1U1pXTU1qV1l1ai94Zz09">Olson
-                    Faculty
-                    Page</a></li>
-            <li><a class="a" href="https://www.uvu.edu/earthscience/programs/index.html">Earth Science Degrees</a></li>
-        </ul>
-    </div>
-</body>
+          <div class="row content">
+            <div class="col-lg-6">
+              <p>
+                The Cryosphere Geospatial and Remote Sensing (CryoGeoSense) Lab
+                at UVU studies how the frozen world of water is changing due to
+                anthropogenic climate change and other human activities. Some
+                questions we have include:
+              </p>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i> How is the Utah snowpack
+                  changing and what factors might accelarate changes we are
+                  seeing?
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> What is the distribution
+                  of ice left under heavy debris from the last glacial maximum
+                  in Utah?
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> What factors enhance or
+                  decrease the rate of glacial retreat in High Mountain Asia?
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> How can we better
+                  estimate and predict water resources using remote sensing,
+                  field observations, and numerical modeling?
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Dr. Olson mentors undergraduate students on projects that
+                involve field, lab, and geospatial research. While some research
+                focuses on remote sensing applications for other environmental
+                or Earth systems research, most project revolve around
+                hydrologic questions in snow- and ice-dominated watersheds in
+                Utah and throughout the globe.
+              </p>
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
 
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="2"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Years</strong> of ongoing mentorship and research at
+                  UVU
+                </p>
+                <a
+                  href="https://www.uvu.edu/directory/employee/?id=aWRudXZiTlQ1U1pXTU1qV1l1ai94Zz09"
+                  >UVU faculty page &raquo;</a
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-bucket"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="4"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Current projects</strong> in crysosphere, hydrosphere,
+                  and geospatial research
+                </p>
+                <a href="#">Find out more &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-person-workspace"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="8"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Student presentations</strong> at local, regional, or
+                  national conferences or symposiums
+                </p>
+                <a href="#">See list &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-people"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="10"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Students</strong> involved in undergraduate research
+                  projects (past & present)
+                </p>
+                <a href="#">See past and current work &raquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-5 align-items-stretch video-box"
+              style="background-image: url('assets/img/perito-2.jpg')"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://youtu.be/RM7p97mrbKI?si=urRj42_bRfYQw-S0"
+                class="venobox play-btn mb-4"
+                data-vbtype="video"
+                data-autoplay="true"
+              ></a>
+            </div>
+
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch"
+            >
+              <div class="content">
+                <h3>
+                  Why care about
+                  <strong>alpine glaciers and snowpack?</strong>
+                </h3>
+                <p>
+                  Glaciers and snow serve as essential water towers for
+                  downstream societal and ecological needs. As anthropogenic
+                  climate change alters the global energy balance we will
+                  continue to see rapid changes in terrestrial ice and water
+                  budgets throughout the globe.
+                </p>
+              </div>
+
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      class="collapse"
+                      data-bs-target="#accordion-list-1"
+                      ><span>01</span> The cryosphere is a clear indicator of
+                      climate change <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-1"
+                      class="collapse show"
+                      data-bs-parent=".accordion-list"
+                    >
+                      The distribution of ice on planet Earth is linked to
+                      global climate. The global retreat of glaciers and
+                      shortening snow season indicate that changes are happening
+                      on our planet at a global scale.
+                      <p></p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>02</span> Sea-level and water resources
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Whether the concern is sea-level rise due to melting
+                        glaciers and ice sheets, or altering freshwater
+                        resources for downstream communities, the cryosphere is
+                        an important Earth system to study.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>03</span> Economy of snow and ice
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Utah's ski industry contributed $1.94 billion in
+                        nonresident visitor spending during the 2022-2023 ski
+                        season alone. Add the countless ski resort and mountain
+                        glacier attractions worldwide for a staggering global
+                        economy.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>04</span> We know more now than ever before
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Thanks to advances in satellite remote sensing, we have
+                        a clearer picture of our planet than ever before. We can
+                        observe the rapid retreat of glaciers and predict with
+                        numerical models how the cryosphere will change over the
+                        next century.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-3"
+                      class="collapsed"
+                      ><span>05</span> Water is life
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Water and energy are the foundations of nearly all
+                        Earth's physical systems. Other water enthusiasts have
+                        said:
+                      </p>
+                      <p>
+                        "Thousands have lived without love, not one without
+                        water." — W. H. Auden.
+                      </p>
+                      <p>
+                        "We forget that the water cycle and life cycle are one."
+                        — Jacques Cousteau.
+                      </p>
+                      <p>
+                        "Water is the driving force of all nature." — Leonardo
+                        da Vinci.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Projects</h2>
+            <p>Current Projects</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-cloud-snow"></i></div>
+                <h4><a href="">Dust on Snow</a></h4>
+                <p>
+                  Dust and other particulates on the snow surface enhance melt.
+                  How does dust deposition and how this affect the Utah
+                  snowpack? Collaboration with Sundance Ski Resort and the
+                  University of Utah.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-map-alt"></i></div>
+                <h4><a href="">Utah Rock Glacier Mapping</a></h4>
+                <p>
+                  How much ice is left beneath thick debris cover throughout
+                  Utah and does it contribute to the water budget? Collaboration
+                  with the University of Utah and the Utah Geological Survey.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-plus-circle"></i></div>
+                <h4><a href="">Glacier Debris-cover Evolution</a></h4>
+                <p>
+                  As many glaciers in High Mountain Asia retreat, supraglacial
+                  debris cover expands, changing the rate at which glaciers
+                  melt.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxs-flame"></i></div>
+                <h4><a href="">Wildfires and Snowpack</a></h4>
+                <p>
+                  Wildfires are becoming more frequent in Utah and the western
+                  US. How is the snow-water storage affected in post-fire
+                  landscapes?
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Isotopes and Flow</a></h4>
+                <p>
+                  Can stable water isotopes be used to improve water models?
+                  Collaboration with the US Geological Survey Water Science
+                  Center.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Other Remote Sensing Work</a></h4>
+                <p>
+                  Various other student-led remote sensing research projects
+                  ranging from mineral detection with hyperspectral imagery to
+                  mapping agricultural changes in remote regions of Africa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Photos</h2>
+            <p>Featured Photos</p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-field">Field</li>
+                <li data-filter=".filter-lab">Lab</li>
+                <li data-filter=".filter-geospat">Geospatial</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-field">
+              <img
+                src="assets/img/featured/IMG_8895.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2024 - Snow pit measurements</p>
+                <a
+                  href="assets/img/featured/IMG_8895.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Students perform full snow pit characterization at Sundance Ski Resort, Spring 2024"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-lab">
+              <img
+                src="assets/img/featured/IMG_9128.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Lab</h4>
+                <p>Spring 2024 - Processing dust samples</p>
+                <a
+                  href="assets/img/featured/IMG_9128.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Students are trained on lab dust sampling procedure, Spring 2024"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-field">
+              <img
+                src="assets/img/featured/IMG_9058.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2024 - Sundance lower study plot</p>
+                <a
+                  href="assets/img/featured/IMG_9058.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Mt Timpanogos towers above students at their lower study plot at Sundance Ski Resort, Spring 2024"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-geospat">
+              <img
+                src="assets/img/featured/IMG_4024.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2023 - Thermal drone mapping</p>
+                <a
+                  href="assets/img/featured/IMG_4024.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="UAVs and GNSS can be useful for mapping a variety of snowpack characteristics, Spring 2023"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-field">
+              <img
+                src="assets/img/featured/IMG_9066.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2024 - Collecting dust samples</p>
+                <a
+                  href="assets/img/featured/IMG_9066.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Students carefully bag dust samples from a prominent dust layer from early March, Spring 2024"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-field">
+              <img
+                src="assets/img/featured/IMG_8882.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2024 - Ice crystal characterization</p>
+                <a
+                  href="assets/img/featured/IMG_8882.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Students characterize different ice crystals throughout the snowpack strata, Spring 2024"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-geospat">
+              <img
+                src="assets/img/featured/IMG_3992.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2023 - Field spectroscopy</p>
+                <a
+                  href="assets/img/featured/IMG_3992.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="A student uses a handheld field spectrometer to use in conjunction with satellite imagery, Spring 2023"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-field">
+              <img
+                src="assets/img/featured/IMG_9478.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Field</h4>
+                <p>Spring 2024 - High effort fieldwork on Timpanogos</p>
+                <a
+                  href="assets/img/featured/IMG_9478.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Timpanogos collaboration with U of Utah Winter venture to the Timp rock glacier, Spring 2024"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-lab">
+              <img
+                src="assets/img/featured/IMG_6394.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Lab</h4>
+                <p>Spring 2023 - Processing dust samples</p>
+                <a
+                  href="assets/img/featured/IMG_6394.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Student processing dust samples at U. of Utah lab, Spring 2023"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Interested in Undergraduate Research?</h3>
+            <p>
+              Motivated students can reach out to Dr. Olson (or other Earth
+              Science faculty) to discuss potential research options. Decisions
+              are made on an individual basis. Undergraduate research requires
+              independent, self-motivated work under the guidance of faculty
+              mentors.
+            </p>
+            <a class="cta-btn" href="mailto::Matt.Olson@uvu.edu"
+              >Send a Message</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Responses from faculty</h2>
+            <p>Frequently Asked Questions</p>
+            <h3>About a Degree in Earth Science</h3>
+          </div>
+
+          <div
+            class="row faq-item d-flex align-items-stretch"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-lg-5">
+              <i class="bx bx-help-circle"></i>
+              <h4>What can I do with a degree in Earth Science?</h4>
+            </div>
+            <div class="col-lg-7">
+              <p>
+                Career opportunities in Earth science (geography, geology, and
+                environmental science and management) are diverse and evolving.
+                Graduates can pursue roles such as environmental consultant,
+                hydrologist, remote sensing analyst, geological engineer, urban
+                planner, climate analyst, air quality permit engineer, GIS
+                specialist, and many more. These careers offer avenues for
+                contributing to environmental sustainability, resource
+                conservation, and understanding Earth's complex systems.
+              </p>
+            </div>
+          </div>
+          <!-- End F.A.Q Item-->
+
+          <div
+            class="row faq-item d-flex align-items-stretch"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-5">
+              <i class="bx bx-help-circle"></i>
+              <h4>
+                What are essential skills that geoscience students should
+                acquire during their undergraduate experience?
+              </h4>
+            </div>
+            <div class="col-lg-7">
+              <p>
+                Geoscience students should focus on developing a range of
+                essential skills during their undergraduate studies. These
+                include proficiency in data analysis and Geographic Information
+                Systems (GIS), hands-on experience in fieldwork and laboratory
+                techniques, and the ability to think critically and solve
+                problems effectively. Strong communication and collaboration
+                skills are crucial for presenting research findings and working
+                in multidisciplinary teams. Additionally, technological literacy
+                and a deep understanding of environmental awareness and ethics
+                are essential for addressing contemporary geological and
+                environmental challenges responsibly.
+              </p>
+            </div>
+          </div>
+          <!-- End F.A.Q Item-->
+
+          <div
+            class="row faq-item d-flex align-items-stretch"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="col-lg-5">
+              <i class="bx bx-help-circle"></i>
+              <h4>
+                What are essential skills for students pursuing a career in GIS
+                and remote sensing?
+              </h4>
+            </div>
+            <div class="col-lg-7">
+              <p>
+                Students aspiring for careers in GIS and remote sensing should
+                focus on developing essential skills such as technical
+                proficiency in GIS software and remote sensing tools, spatial
+                analysis techniques, and programming languages like Python and
+                R. They should also prioritize gaining expertise in remote
+                sensing interpretation, cartography, and data visualization,
+                alongside database management skills. Critical thinking and
+                problem-solving abilities are crucial for addressing complex
+                spatial challenges across various sectors, and interdisciplinary
+                knowledge in fields like geography and environmental science
+                further enhances their versatility and applicability in diverse
+                domains.
+              </p>
+            </div>
+          </div>
+          <!-- End F.A.Q Item-->
+
+          <div
+            class="row faq-item d-flex align-items-stretch"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="col-lg-5">
+              <i class="bx bx-help-circle"></i>
+              <h4>
+                How can an Earth Science student take full advantage of their
+                undergraduate experience?
+              </h4>
+            </div>
+            <div class="col-lg-7">
+              <p>
+                To make the most of your undergraduate Earth Science program,
+                diversify your coursework, engage in hands-on learning through
+                fieldwork and research, and build strong relationships with
+                professors and peers. Seek internships and experiences in
+                relevant industries, develop technical skills in geospatial
+                technologies and data analysis, and stay informed about the
+                latest research and trends in the field. Consider contributing
+                to research projects and exploring opportunities for graduate
+                studies to further enhance your expertise and career prospects.
+              </p>
+            </div>
+          </div>
+          <!-- End F.A.Q Item-->
+
+          <div
+            class="row faq-item d-flex align-items-stretch"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="col-lg-5">
+              <i class="bx bx-help-circle"></i>
+              <h4>How can students get involved in undergraduate research?</h4>
+            </div>
+            <div class="col-lg-7">
+              <p>
+                Motivated students are encouraged to select a subject of
+                personal interest for further exploration. Undergraduate
+                research demands a significant investment of time and
+                dedication, as students undertake independent inquiry under the
+                supervision of a faculty mentor. It is advisable to establish
+                connections with faculty members whose areas of expertise
+                resonate with the student's academic pursuits and interests.
+              </p>
+            </div>
+          </div>
+          <!-- End F.A.Q Item-->
+        </div>
+      </section>
+      <!-- End Frequently Asked Questions Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <h3>CryoSpatial Lab</h3>
+                <p class="pb-3">
+                  <em>Cryosphere and Geospatial Research</em>
+                </p>
+                <p>
+                  PS 214 <br />
+                  800 W University Parkway<br />
+                  Orem, UT, 84058<br />
+                  USA<br /><br />
+                  <strong>Phone:</strong> +1 801 863 6864<br />
+                  <strong>Email:</strong> Matt.Olson@uvu.edu<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#about">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Resources</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">News</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Events</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>External Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a
+                    href="https://www.uvu.edu/college-of-science/earth-science/"
+                    >UVU Earth Science</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a
+                    href="https://www.uvu.edu/directory/employee/?id=aWRudXZiTlQ1U1pXTU1qV1l1ai94Zz09"
+                    >Olson Faculty Page</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a
+                    href="https://nwcc-apps.sc.egov.usda.gov/imap/#version=169&elements=&networks=SNTL&states=UT&basins=!&hucs=&minElevation=&maxElevation=&elementSelectType=any&activeOnly=true&activeForecastPointsOnly=false&hucLabels=false&hucIdLabels=false&hucParameterLabels=true&stationLabels=&overlays=&hucOverlays=&basinOpacity=75&basinNoDataOpacity=25&basemapOpacity=100&maskOpacity=0&mode=data&openSections=dataElement,parameter,date,basin,options,elements,location,networks&controlsOpen=true&popup=&popupMulti=&popupBasin=&base=esriNgwm&displayType=basinstation&basinType=8&dataElement=WTEQ&depth=-8&parameter=PCTMED&frequency=DAILY&duration=I&customDuration=&dayPart=E&monthPart=E&forecastPubDay=1&forecastExceedance=50&useMixedPast=true&seqColor=1&divColor=7&scaleType=D&scaleMin=&scaleMax=&referencePeriodType=POR&referenceBegin=1991&referenceEnd=2020&minimumYears=20&hucAssociations=true&relativeDate=-1&lat=41.249&lon=-112.187&zoom=7.0"
+                    >Utah Snow Conditions</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a
+                    href="https://nwcc-apps.sc.egov.usda.gov/awdb/site-plots/POR/WTEQ/UT/Timpanogos%20Divide.html"
+                    >Timp Divide Snotel</a
+                  >
+                </li>
+
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://nsidc.org/snow-today">NSIDC Snow Today</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Student Blog</h4>
+              <p>
+                Subscribe to receive updates from the student snowpack blog!
+                Active Jan-May each year, reporting on snow conditions in the
+                Wasatch mountains.
+              </p>
+
+              <form action="https://send.pageclip.co/bFMZpa7kk1kOVkTD7pdZjlLzDAVDX1Ed" class="pageclip-form" method="post">
+                <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+                <input type="email" name="email"/>
+                <!-- <input type="submit" value="Subscribe" class="pageclip-form__submit"/> -->
+              
+                <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                <button type="submit" class="pageclip-form__submit">
+                  <span>Send</span>
+                </button>
+              </form>
+              
+
+              <!-- <form action="https://send.pageclip.co/bFMZpa7kk1kOVkTD7pdZjlLzDAVDX1Ed" class="pageclip-form" method="post"> -->
+                <!-- <form action="https://send.pageclip.co/bFMZpa7kk1kOVkTD7pdZjlLzDAVDX1Ed/student-blog" class="pageclip-form" method="post"> -->
+                <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+                <!-- <input type="text" name="name" value="Roscoe Jones" />
+                <input type="email" name="email" value="roscoe@example.com" /> -->
+              
+                <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                <!-- <button type="submit" class="pageclip-form__submit">
+                  <span>Send</span>
+                </button>
+              </form> -->
+
+              <!-- <form action="forms/subscribe.php" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Multi</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
+    <!--Pageclip forms-->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  </body>
 </html>

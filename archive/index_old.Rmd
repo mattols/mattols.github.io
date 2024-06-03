@@ -1,0 +1,56 @@
+---
+titlepage: "Main page"
+output: html_document
+---
+
+
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<style>
+div.gray { background-color:#005b96; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "gray">
+
+
+
+<style>
+div.blue { background-color:#989e90; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+## [HOME](https://mattols.github.io) | [ABOUT ME](https://mattols.github.io/bio/) | [SNOW WATCH](https://mattols.github.io/snow_watch/) | [COURSES](https://www.myuvu.edu) | [DEPT PAGE](https://www.uvu.edu/earthscience/)
+
+
+## **Matt Olson - Utah Valley University**
+
+<div style= "float:right;position: relative;top:20px">
+```{r, out.width = "600px",echo=FALSE}
+knitr::include_graphics("./web_content/imgs/dogs.jpg")
+```
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br>
+
+</div>
+
+___
+
+<br>
+
+## **Contact:**
+
+### Matt Olson<br>
+### Department of Earth Science - Utah Valley University<br>
+### 800 W University Parkway Orem, UT 84058<br>
+### Office: PS 214<br>
+### matt.olson@uvu.edu
+##### Check it out: [Snow](https://www.nrcs.usda.org){target="_blank"}
+<br><br><br>
+
+</div>
