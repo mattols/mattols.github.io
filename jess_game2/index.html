@@ -11,10 +11,15 @@
     <h1>The Missing IEP Files: Escape Room</h1>
     <p>Welcome! Your mission is to solve puzzles and unlock the "filing cabinet" containing critical IEP documents before the meeting starts.</p>
 
+    <!-- Timer Display -->
+    <div id="timer">
+      <h2>Time Remaining: <span id="time-left">02:00</span> minutes</h2>
+    </div>
+
     <div id="room1" class="room">
       <h2>Room 1: Components Check</h2>
       <p>Your first challenge: Unscramble the letters to identify the key components of SMART goals.</p>
-      <p id="scrambled-word">TAMRS</p>
+      <p id="scrambled-word"></p>
       <input type="text" id="guess" placeholder="Enter your answer" />
       <button onclick="checkRoom1Answer()">Submit</button>
       <p id="room1-message"></p>
@@ -38,6 +43,8 @@
       <h2>Final Challenge: Write a SMART Goal</h2>
       <p>Based on the following scenario, write a SMART goal:</p>
       <p>Emily is a 3rd grader struggling with math fluency. She can solve 10 addition problems in 2 minutes, but she needs to reach 20 problems by the end of the semester.</p>
+      <p><strong>Instructions:</strong> Write a SMART goal for Emily!
+      </p>
       <textarea id="smart-goal" placeholder="Write your SMART goal here"></textarea>
       <button onclick="checkRoom3Answer()">Submit</button>
       <p id="room3-message"></p>
