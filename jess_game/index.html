@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Missing IEP Files: Escape Room</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>The Missing IEP Files: Escape Room</h1>
+    <p>Welcome! Your mission is to solve puzzles and unlock the "filing cabinet" containing critical IEP documents before the meeting starts.</p>
+
+    <div id="room1" class="room">
+      <h2>Room 1: Components Check</h2>
+      <p>Your first challenge: Unscramble the letters to identify the key components of SMART goals.</p>
+      <p id="scrambled-word">TAMRS</p>
+      <input type="text" id="guess" placeholder="Enter your answer" />
+      <button onclick="checkRoom1Answer()">Submit</button>
+      <p id="room1-message"></p>
+    </div>
+
+    <div id="room2" class="room hidden">
+      <h2>Room 2: Measurement Mystery</h2>
+      <p>Now, match the baseline data to the appropriate measurement method.</p>
+      <p>Student's reading score is 20 words per minute. What is the best way to measure progress?</p>
+      <select id="measurement-choice">
+        <option value="">Select an option</option>
+        <option value="1">Observation</option>
+        <option value="2">Standardized Test</option>
+        <option value="3">Teacher Assessment</option>
+      </select>
+      <button onclick="checkRoom2Answer()">Submit</button>
+      <p id="room2-message"></p>
+    </div>
+
+    <div id="room3" class="room hidden">
+      <h2>Final Challenge: Write a SMART Goal</h2>
+      <p>Based on the following scenario, write a SMART goal:</p>
+      <p>Emily is a 3rd grader struggling with math fluency. She can solve 10 addition problems in 2 minutes, but she needs to reach 20 problems by the end of the semester.</p>
+      <textarea id="smart-goal" placeholder="Write your SMART goal here"></textarea>
+      <button onclick="checkRoom3Answer()">Submit</button>
+      <p id="room3-message"></p>
+    </div>
+
+    <div id="final-message" class="hidden">
+      <h2>Congratulations!</h2>
+      <p>You unlocked the IEP files and successfully completed the escape room!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
