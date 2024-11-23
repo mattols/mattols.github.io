@@ -54,6 +54,10 @@ body {
     resize: none;
   }
   
+  #timer {
+    margin-bottom: 20px;
+  }
+  
   #final-message {
     background-color: #27ae60;
     padding: 20px;
